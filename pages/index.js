@@ -1,27 +1,18 @@
 import Link from "next/link";
-//import { Header, Avatar } from '../styles/global';
-import {Box, Header, Avatar, Text, Nav, Anchor } from 'grommet';
+import { Main, Heading, Text, Paragraph } from "grommet";
 
 const Home = () => (
-    <Header background="status-warning" pad="medium">
-        <Box direction="row" align="center">
-            <Avatar
-                src="https://avatars1.githubusercontent.com/u/32553223?s=460&u=05a7c3f5626304aa22c520435be48a5327ef993e&v=4"
-            />
-            <Text size="large" margin="small" color="#fff">Lucas Tiago</Text>
-        </Box>
-        <Box direction="row">
-            <Nav direction="row">
-                <Link href="/jobs" passHref>
-                    <Anchor>Trabalhos</Anchor>
-                </Link>
-                <Link href="/aboutme" passHref>
-                    <Anchor>Sobre</Anchor>
-                </Link>
-            </Nav>
-        </Box>
-    </Header>
+  <Main pad="large">
+    <Heading>Olá, sou Lucas Tiago</Heading>
+    <Paragraph margin="none">
+      Seja bem-vindo, irei falar um pouco sobre mim. Mussum Ipsum, cacilds vidis
+      litro abertis. Admodum accumsan disputationi eu sit. Vide electram
+      sadipscing et per. Praesent malesuada urna nisi, quis volutpat erat
+      hendrerit non. Nam vulputate dapibus. Vehicula non. Ut sed ex eros.
+      Vivamus sit amet nibh non tellus tristique interdum. Nec orci ornare
+      consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+    </Paragraph>
+  </Main>
 );
-
 
 export default Home;
